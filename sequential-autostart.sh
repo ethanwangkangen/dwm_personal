@@ -1,11 +1,10 @@
 #!/bin/sh
 
 # 1. Open empty terminal
-st &
+st  &
 
 sleep 1
-st -t neofetch -e sh -c "neofetch" &
-
+st -e sh -c "neofetch; exec sh" &
 
 sleep 1
 st -t htop -e htop &
