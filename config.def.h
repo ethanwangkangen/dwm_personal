@@ -23,7 +23,11 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"st", NULL,
+	
+        //"st", "-t", "neofetch", "-e", "sh", "-c", "neofetch; exec sh", NULL, // third runs neofetch then shell
+	//"st", "-t", "htop", "-e", "htop", NULL,            // second terminal runs htop
+	//"st", NULL, 
+	"sh", "-c", "/home/ethan/dwm/sequential-autostart.sh", NULL,
 	"firefox", NULL,
 	"obsidian", NULL,
 	"sh", "-c", "flatpak run com.spotify.Client", NULL,
